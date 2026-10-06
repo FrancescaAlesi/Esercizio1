@@ -7,22 +7,27 @@
     </head>
     <body>
         <head>
-            <h1>Francesca Alesi</h1>
+            <h1 id="inizio">Francesca Alesi</h1>
             <p><strong>Studentessa Full Stack Developer</strong> - corso Epicode 2026</p>
             <nav>
                 <ul>
-                    <li><a href="javascript:void(0)">Chi sono</a></li>
-                    <li><a href="javascript:void(0)">Competenze</a></li>
-                    <li><a href="javascript:void(0)">Progetti</a></li>
-                    <li><a href="javascript:void(0)">Contatti</a></li>
+                    <li><a href="#Chi sono">Chi sono</a></li>
+                    <li><a href="#Competenze">Competenze</a></li>
+                    <li><a href="#Esperienze">Esperienze</a></li>
+                    <li><a href="#Progetti">Progetti</a></li>
+                    <li><a href="#Contattami">Contattami</a></li>
                 </ul>
             </nav>
         </head>
         <main>
             <h2 id="Chi sono">Chi sono</h2>
+            <img src="Foto-francy.jpeg" alt="Foto profilo" width="210" height="210"/>
             <p>Mi chiamo Francesca Alesi e sto imparando a programmare. Studio sviluppo web con <strong>Epicode </strong> e ogni giorno aggiungerò qualcosa di nuovo a queta pagina. Mi piace lavorare in gruppo, soprattutto quando posso imparare cose nuove.</p>
             <p>Vivo a Palermo. Ho una formazione precedente in <em>informatica.</em></p>
-            
+            <a href="#">
+                <button type="submit">Torna all'inizio</button>
+            </a>
+
             <h2 id="Competenze">Competenze</h2>
             <p>Le tecnologie che vedrò durante le prime settimane di corso.</p>
             <ul>
@@ -31,6 +36,49 @@
                 <li>Git e GitHub - versionamento del codice</li>
                 <li>Visual Studio Code - editor di lavoro</li>
             </ul>
+            <a href="#">
+                <button type="submit">Torna all'inizio</button>
+            </a>
+
+            <section>
+                <h2 id="Esperienze">Esperienze</h2>
+                <p>Un riepilogo del mio percorso formativo e lavorativo.</p>
+                <table>
+                    <caption>Esperienze formative e lavorative</caption>
+                    <thead>
+                        <tr>
+                            <th>Anno</th>
+                            <th>Ruolo</th>
+                            <th>Azienda/Scuola</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>2026</td>
+                            <td>Studentessa Full Stack</td>
+                            <td>Epicode</td>
+                        </tr>
+                        <tr>
+                            <td>2023</td>
+                            <td>Volontaria</td>
+                            <td>Croce Rossa Italina - Comitato di Palermo</td>
+                        </tr>
+                        <tr>
+                            <td>2021 - 2026</td>
+                            <td>Perito informatico</td>
+                            <td>ITIS Vittorio Emanuele III, Palermo</td>
+                        </tr>
+                        <tr>
+                            <td>07/2025 - 10/2025</td>
+                            <td>Addetta vendite</td>
+                            <td>Lego Store - Palermo</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <a href="#">
+                    <button type="submit">Torna all'inizio</button>
+                </a>
+            </section>
 
             <h2 id="Progetti">Progetti</h2>
             <p>I lavori fatti durante il pre-corso.</p>
@@ -46,11 +94,46 @@
             <h3>YouTube clone</h3>
             <p>Una pagina che simula l'interfaccia di YouTube.</p>
             <a href="https://github.com/FrancescaAlesi/Challenge-YouTube" target="_blank">Vedi su GitHub</a>
+            <br/><br/>
+            <a href="#">
+                <button type="submit">Torna all'inizio</button>
+            </a>
 
-            <h2 id="Contatti">Contatti</h2>
-            <p>Sono presente su quete piattaforme, dove puoi seguire i miei progetti e contattarmi.</p>
-            <p>Profilo GitHub: <a href="https://github.com/FrancescaAlesi" target="_blank">github.com/FrancescaAlesi</a></p>
-            <p>Profilo LinkedIn: <a href="https://www.linkedin.com/in/francesca-alesi/" target="_blank">linkedin.com/in/francesca-alesi/</a></p>
+            <h2 id="Contattami">Contattami</h2>
+            <from>
+                <label for="nome">Nome</label>
+                <br/>
+                <input type="text" id="nome" name="nome" placeholder="Il tuo nome" required>
+                <br/><br/>
+                <label for="email">Email</label>
+                <br/>
+                <input type="text" id="email" name="email" placeholder="tu@esempio.it" required>
+                <br/><br/>
+                <label for="course">Motivo del contatto</label>
+                <br/>
+                <select id="course" name="course">
+                    <option value=" " Seleziona></option>
+                    <option value="Contatto">Contatto</option>
+                    <option value="Proposta di lavoro">Proposta di lavoro</option>
+                    <option value="Colloquio">Colloquio</option>
+                    <option value="Consulenza">Consulenza</option>
+                </select>
+                <br/><br/>
+                <label for="data">Data di nascita</label><br />
+                <input type="date" id="data" name="data" />
+                <br/><br/>
+                <label for="address">Messaggio</label><br />
+                <textarea name="address" id="address" placeholder="Scrivi qui il tuo messaggio..."></textarea>
+                <br/><br/>
+                <input type="checkbox" name="checkbox" id="checkbox" />
+                Accetto di essere ricontattato all'indirizzo indicato
+                <br/><br/>
+                <button type="submit">Invia</button>
+                <br/><br/>
+                <a href="#">
+                <button type="submit">Torna all'inizio</button>
+                </a>
+            </from>
         </main>
         <footer>
             <p>&copy; 2026 Francesca Alesi.</p>
