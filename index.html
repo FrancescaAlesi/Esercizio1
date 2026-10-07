@@ -4,9 +4,10 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Francesca Alesi</title>
+        <link rel="stylrsheet" type="text/css" href="assets/CSS/style.css"/>
     </head>
     <body>
-        <head>
+        <header>
             <h1 id="inizio">Francesca Alesi</h1>
             <p><strong>Studentessa Full Stack Developer</strong> - corso Epicode 2026</p>
             <nav>
@@ -18,30 +19,34 @@
                     <li><a href="#Contattami">Contattami</a></li>
                 </ul>
             </nav>
-        </head>
+        </header>
         <main>
-            <h2 id="Chi sono">Chi sono</h2>
-            <img src="Foto-francy.jpeg" alt="Foto profilo" width="210" height="210"/>
-            <p>Mi chiamo Francesca Alesi e sto imparando a programmare. Studio sviluppo web con <strong>Epicode </strong> e ogni giorno aggiungerò qualcosa di nuovo a queta pagina. Mi piace lavorare in gruppo, soprattutto quando posso imparare cose nuove.</p>
-            <p>Vivo a Palermo. Ho una formazione precedente in <em>informatica.</em></p>
-            <a href="#">
-                <button type="submit">Torna all'inizio</button>
-            </a>
+            <section id="Chi sono">
+                <h2>Chi sono</h2>
+                <img src="assets/IMG/Foto-francy.jpeg" alt="Foto profilo" width="210" height="210"/>
+                <p>Mi chiamo Francesca Alesi e sto imparando a programmare. Studio sviluppo web con <strong>Epicode </strong> e ogni giorno aggiungerò qualcosa di nuovo a queta pagina. Mi piace lavorare in gruppo, soprattutto quando posso imparare cose nuove.</p>
+                <p>Vivo a Palermo. Ho una formazione precedente in <em>informatica.</em></p>
+                <a href="#">
+                    <button type="submit">Torna all'inizio</button>
+                </a>
+            </section>
 
-            <h2 id="Competenze">Competenze</h2>
-            <p>Le tecnologie che vedrò durante le prime settimane di corso.</p>
-            <ul>
-                <li>HTML - struttura delle pagine</li>
-                <li>CSS - stile e impaginazione</li>
-                <li>Git e GitHub - versionamento del codice</li>
-                <li>Visual Studio Code - editor di lavoro</li>
-            </ul>
-            <a href="#">
-                <button type="submit">Torna all'inizio</button>
-            </a>
+            <section id="Competenze"></section>
+                <h2>Competenze</h2>
+                <p>Le tecnologie che vedrò durante le prime settimane di corso.</p>
+                <ul>
+                    <li>HTML - struttura delle pagine</li>
+                    <li>CSS - stile e impaginazione</li>
+                    <li>Git e GitHub - versionamento del codice</li>
+                    <li>Visual Studio Code - editor di lavoro</li>
+                </ul>
+                <a href="#">
+                    <button type="submit">Torna all'inizio</button>
+                </a>
+            </section>
 
-            <section>
-                <h2 id="Esperienze">Esperienze</h2>
+            <section id="Esperienze">
+                <h2>Esperienze</h2>
                 <p>Un riepilogo del mio percorso formativo e lavorativo.</p>
                 <table>
                     <caption>Esperienze formative e lavorative</caption>
@@ -80,63 +85,82 @@
                 </a>
             </section>
 
-            <h2 id="Progetti">Progetti</h2>
-            <p>I lavori fatti durante il pre-corso.</p>
-            <h3>Pagina di presentazione</h3>
-            <p>Una semplice pagina di presentazione con informazioni personali.</p>
-            <a href="https://github.com/FrancescaAlesi/Challenge-HTML" target="_blank">Vedi su GitHub</a>
-            <h3>Registrazione Music Streaming </h3>
-            <p>Una pagina di registrazione per un servizio di streaming musicale.</p>
-            <a href="https://github.com/FrancescaAlesi/Challenge-CSS" target="_blank">Vedi su GitHub</a>
-            <h3>Teatri italiani</h3>
-            <p>Una pagina con informazioni sui teatri italiani.</p>
-            <a href="https://github.com/FrancescaAlesi/Challenge-Frontend" target="_blank">Vedi su GitHub</a>
-            <h3>YouTube clone</h3>
-            <p>Una pagina che simula l'interfaccia di YouTube.</p>
-            <a href="https://github.com/FrancescaAlesi/Challenge-YouTube" target="_blank">Vedi su GitHub</a>
-            <br/><br/>
-            <a href="#">
-                <button type="submit">Torna all'inizio</button>
-            </a>
+            <section id="Progetti">
+                <h2 id="Progetti">Progetti</h2>
+                <p>I lavori fatti durante il pre-corso.</p>
 
-            <h2 id="Contattami">Contattami</h2>
-            <from>
-                <label for="nome">Nome</label>
-                <br/>
-                <input type="text" id="nome" name="nome" placeholder="Il tuo nome" required>
-                <br/><br/>
-                <label for="email">Email</label>
-                <br/>
-                <input type="text" id="email" name="email" placeholder="tu@esempio.it" required>
-                <br/><br/>
-                <label for="course">Motivo del contatto</label>
-                <br/>
-                <select id="course" name="course">
-                    <option value=" " Seleziona></option>
-                    <option value="Contatto">Contatto</option>
-                    <option value="Proposta di lavoro">Proposta di lavoro</option>
-                    <option value="Colloquio">Colloquio</option>
-                    <option value="Consulenza">Consulenza</option>
-                </select>
-                <br/><br/>
-                <label for="data">Data di nascita</label><br />
-                <input type="date" id="data" name="data" />
-                <br/><br/>
-                <label for="address">Messaggio</label><br />
-                <textarea name="address" id="address" placeholder="Scrivi qui il tuo messaggio..."></textarea>
-                <br/><br/>
-                <input type="checkbox" name="recontact" id="recontact" />
-                <lable for="recontact">Accetto di essere ricontattato all'indirizzo indicato</lable>
-                <br/><br/>
-                <button type="submit">Invia</button>
+                <h3>Pagina di presentazione</h3>
+                <p>Una semplice pagina di presentazione con informazioni personali.</p>
+                <a href="https://github.com/FrancescaAlesi/Challenge-HTML" target="_blank">Vedi su GitHub</a>
+
+                <h3>Registrazione Music Streaming </h3>
+                <p>Una pagina di registrazione per un servizio di streaming musicale.</p>
+                <a href="https://github.com/FrancescaAlesi/Challenge-CSS" target="_blank">Vedi su GitHub</a>
+
+                <h3>Teatri italiani</h3>
+                <p>Una pagina con informazioni sui teatri italiani.</p>
+                <a href="https://github.com/FrancescaAlesi/Challenge-Frontend" target="_blank">Vedi su GitHub</a>
+
+                <h3>YouTube clone</h3>
+                <p>Una pagina che simula l'interfaccia di YouTube.</p>
+                <a href="https://github.com/FrancescaAlesi/Challenge-YouTube" target="_blank">Vedi su GitHub</a>
                 <br/><br/>
                 <a href="#">
-                <button type="submit">Torna all'inizio</button>
+                    <button type="submit">Torna all'inizio</button>
                 </a>
-            </from>
+            </section>
+
+            <section id="Contattami">
+                <h2>Contattami</h2>
+                <p>Compila il form per scrivermi. Ti rispondo entro 24 ore.</p>
+
+
+                <from>
+                    <label for="nome">Nome</label>
+                    <br/>
+                    <input type="text" id="nome" name="nome" placeholder="Il tuo nome" required>
+                    <br/><br/>
+
+                    <label for="email">Email</label>
+                    <br/>
+                    <input type="text" id="email" name="email" placeholder="tu@esempio.it" required>
+                    <br/><br/>
+
+                    <label for="course">Motivo del contatto</label>
+                    <br/>
+                    <select id="course" name="course">
+                        <option value=" " Seleziona></option>
+                        <option value="Contatto">Contatto</option>
+                        <option value="Proposta di lavoro">Proposta di lavoro</option>
+                        <option value="Colloquio">Colloquio</option>
+                        <option value="Consulenza">Consulenza</option>
+                    </select>
+                    <br/><br/>
+
+                    <label for="data">Data di nascita</label><br />
+                    <input type="date" id="data" name="data" />
+                    <br/><br/>
+
+                    <label for="address">Messaggio</label><br />
+                    <textarea name="address" id="address" placeholder="Scrivi qui il tuo messaggio..."></textarea>
+                    <br/><br/>
+
+                    <input type="checkbox" name="recontact" id="recontact" />
+                    <lable for="recontact">Accetto di essere ricontattato all'indirizzo indicato</lable>
+                    <br/><br/>
+
+                    <button type="submit">Invia</button>
+                    <br/><br/>
+                    <a href="#">
+                        <button type="submit">Torna all'inizio</button>
+                    </a>
+                </from>
+            </section>
         </main>
+
         <footer>
             <p>&copy; 2026 Francesca Alesi.</p>
         </footer>
+        
     </body>
 </html>
