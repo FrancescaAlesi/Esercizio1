@@ -1,0 +1,194 @@
+body {
+    width: 100%;
+    max-width: 576px;
+    margin: 0 auto;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+#site-header {
+    min-height: 300px;
+    padding: 25px 20px 20px;
+    text-align: center;
+    color:  #F44A4A;
+
+    background-image: url("../IMG/Gemini-foto.jpg");
+}
+
+#site-header h1 {
+    margin: 0 0 8px;
+    font-size: 32px;
+    font-style: italic;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+#site-header p {
+    margin: 0 0 20px;
+    font-size: 13px;
+}
+
+#site-header p strong {
+    color: #F44A4A;
+}
+
+#site-header nav {
+    margin-top: 25px;
+}
+
+#site-header nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#site-header nav li {
+    margin: 8px 0;
+}
+
+#site-header nav a {
+    color: hsl(67, 98%, 26%);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+#site-header nav a:hover {
+    color:#ffffff;
+    text-decoration: underline;
+}
+
+section,
+main > h2,
+main > p,
+main > ul,
+main > a {
+    width: 100%;
+}
+
+section {
+    padding: 5px 10px;
+}
+
+section h2,
+main > h2 {
+    margin: 0 0 15px;
+    color: #1F3D7A;
+    font-size: 22px;
+}
+
+section h3 {
+    margin-top: 18px;
+    margin-bottom: 6px;
+    color: #1F3D7A;   
+    font-size: 16px;
+    font-weight: bold;
+}
+
+section p {
+    margin: 8px 0 14px;
+}
+
+section img {
+    display: block;
+    width: 210px;
+    height: 210px;
+    margin: 10px 0 15px;
+}
+
+section a {
+    font-weight: bold;
+}
+
+section a:hover {
+    color: #ff0000;
+}
+
+#Progetti h3 {
+    margin-top: 20px;
+    padding-bottom: 4px;
+}
+
+#Progetti p {
+    margin-bottom: 5px;
+}
+
+#Progetti a:not(:has(button)) {
+    font-size: 13px;
+}
+
+
+#Contattami label {
+    font-size: 13px;
+    font-weight: bold;
+    color:#152f63;
+}
+
+input[type="text"],
+input[type="date"],
+select,
+textarea {
+    width: 100%;
+    max-width: 500px;
+    margin-top: 4px;
+    padding: 7px 8px;
+    border: 1px solid #888;
+    border-radius: 2px;
+    background-color: #fff;
+    color: #000;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+input[type="text"]:hover,
+input[type="text"]:focus,
+input[type="date"]:hover,
+input[type="date"]:focus,
+select:hover,
+select:focus,
+textarea:hover,
+textarea:focus {
+    background-color: #000;
+    color: #fff;
+    outline: none;
+}
+
+input[type="text"]:hover::placeholder,
+input[type="text"]:focus::placeholder,
+textarea:hover::placeholder,
+textarea:focus::placeholder {
+    color: #ccc;
+}
+
+button {
+    padding: 7px 18px;
+    border: none;
+    border-radius: 2px;
+    background-color: hsl(220, 60%, 30%);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: hsl(220, 60%, 45%);
+}
+
+footer {
+    margin-top: 30px;
+    padding: 10px 15px;
+
+    text-align: center;
+
+    background-color: #172136;
+    color: white;
+
+    font-size: 12px;
+}
+
+footer p {
+    margin: 0;
+}
