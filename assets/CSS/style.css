@@ -105,19 +105,6 @@ section a:hover {
     color: #ff0000;
 }
 
-#Progetti h3 {
-    margin-top: 20px;
-    padding-bottom: 4px;
-}
-
-#Progetti p {
-    margin-bottom: 5px;
-}
-
-#Progetti a:not(:has(button)) {
-    font-size: 13px;
-}
-
 
 #Contattami label {
     font-size: 13px;
