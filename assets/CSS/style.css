@@ -1,172 +1,245 @@
+*,*::before, *::after {
+  box-sizing: border-box;
+}
+
 body {
-    width: 100%;
-    max-width: 576px;
-    margin: 0 auto;
     font-family: 'Helvetica Neue', Arial, sans-serif;
-    font-size: 14px;
-    line-height: 1.5;
+    font-size: 16px;
+	line-height: 1.7;
+	color: #000000;
+	background-color: #f7f7f7;
+    margin: 0;
 }
 
 #site-header {
-    min-height: 300px;
-    padding: 25px 20px 20px;
-    text-align: center;
-    color:  #F44A4A;
-
-    background-image: url("../IMG/Gemini-foto.jpg");
+    background-color: hsl(220, 40%, 20%);
+	background-image: url("../IMG/Gemini-foto.jpg");
+	background-size: cover;
+	background-position: center;
+	color: #F44A4A;
+	text-align: center;
+	line-height: 2.4;
+    padding: 60px 20px 40px;
+    border-bottom: 4px solid #c59b27;
 }
 
 #site-header h1 {
-    margin: 0 0 8px;
-    font-size: 32px;
-    font-style: italic;
-    font-weight: bold;
-    color: #ffffff;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-#site-header p {
-    margin: 0 0 20px;
-    font-size: 13px;
+#inizio{
+    color:#ffffff;
 }
 
-#site-header p strong {
-    color: #F44A4A;
+.menu-link {
+  display: flex;
+  justify-content: center; 
+  align-items: center;     
+  gap: 20px
+  width: 100%;
 }
 
-#site-header nav {
-    margin-top: 25px;
+ul {
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  list-style: none;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+  width: 100%;
 }
 
-#site-header nav ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-
-#site-header nav li {
-    margin: 8px 0;
+.tagline {
+	color: rgb(220, 220, 220);
+	font-style: italic;
 }
 
 #site-header nav a {
-    color: hsl(67, 98%, 26%);
+	color: hsl(67, 98%, 26%);
+	font-weight: bold;
+	line-height: 3;
+    display: inline-block;
+    padding: 8px 16px;
+    margin: 0 4px;
+    border-radius: 4px;
     text-decoration: none;
-    font-weight: bold;
-    font-size: 13px;
 }
 
-#site-header nav a:hover {
-    color:#ffffff;
-    text-decoration: underline;
+main {
+  max-width: 920px;
+  margin: 0 auto;
+  padding: 40px 20px;
 }
 
-section,
-main > h2,
-main > p,
-main > ul,
-main > a {
-    width: 100%;
+main section {
+  background-color: #ffffff;
+  padding: 32px;
+  margin-bottom: 24px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
 }
 
-section {
-    padding: 5px 10px;
+main section h2::before {
+  content: "— ";
+  color: #c59b27;
 }
 
-section h2,
-main > h2 {
-    margin: 0 0 15px;
-    color: #1F3D7A;
-    font-size: 22px;
+nav a:hover {
+	color: #ffffff;
+	background-color: rgba(255, 255, 255, 0.15);
 }
 
-section h3 {
-    margin-top: 18px;
-    margin-bottom: 6px;
-    color: #1F3D7A;   
-    font-size: 16px;
-    font-weight: bold;
+h2 {
+	font-size: 1.8rem;
+	color: hsl(220, 60%, 30%);
+	text-align: left;
+	line-height: 2.4;
 }
 
-section p {
-    margin: 8px 0 14px;
+h3 {
+	font-size: 1.2rem;
+	color: hsl(220, 30%, 25%);
+	text-align: left;
+	line-height: 2.2;
 }
 
-section img {
-    display: block;
-    width: 210px;
-    height: 210px;
-    margin: 10px 0 15px;
+#chi-sono {
+	background-color: #ffffff;
+	text-align: justify;
 }
 
-section a {
-    font-weight: bold;
+#chi-sono p:first-of-type {
+	font-size: 1.15rem;
+	font-style: italic;
+	color: hsl(220, 30%, 25%);
+}
+
+.avatar {
+  width: 110px;                     
+  height: 110px;                   
+  border-radius: 50%;               
+  border: 4px solid #c59b27;        
+  float: left;                      
+  margin: 0 24px 12px 0;           
+  object-fit: cover;                
+  object-position: center;          
+  display: block;                   
+}
+
+.lista-competenze {
+  display: block;
+  list-style: disc;
+  padding-left: 20px;
+  margin-bottom: 25px;
+}
+
+.lista-competenze li {
+  margin-bottom: 10px;  
+}
+
+#chi-sono p:first-of-type::first-letter {
+  font-size: 3rem;
+  font-weight: bold;
+  float: left;
+  margin-right: 6px;
+  line-height: 1;
+  color: hsl(220, 60%, 30%);
+}
+.project:first-of-type h3::after {
+  content: "NEW";
+  display: inline-block;
+  padding: 2px 8px;
+  margin-left: 12px;
+  background-color: #b32d2e;
+  color: #ffffff;
+  border-radius: 3px;
+  font-size: 0.75rem;
+  vertical-align: middle;
 }
 
 section a:hover {
     color: #ff0000;
 }
 
-
-#Contattami label {
-    font-size: 13px;
-    font-weight: bold;
-    color:#152f63;
+.skill-list {
+	line-height: 2.2;
 }
 
-input[type="text"],
-input[type="date"],
-select,
+.skill-list li:nth-child(odd) {
+	background-color: #f5f7fb;
+}
+
+.skill-list li:nth-child(even) {
+	background-color: #ffffff;
+}
+
+.skill-list li:first-child {
+	font-weight: bold;
+}
+
+.project:nth-of-type(odd) {
+	background-color: hsl(45, 60%, 96%);
+}
+
+.project:nth-of-type(even) {
+	background-color: #ffffff;
+}
+
+label {
+	font-weight: bold;
+	color: hsl(220, 60%, 25%);
+}
+
+input,
 textarea {
-    width: 100%;
-    max-width: 500px;
-    margin-top: 4px;
-    padding: 7px 8px;
-    border: 1px solid #888;
-    border-radius: 2px;
-    background-color: #fff;
-    color: #000;
+	font-family: 'Helvetica Neue', Arial, sans-serif;
+	font-size: 1rem;
+	width: 60%;
+	background-color: #f5f7fb;
 }
 
-input[type="text"]:hover,
-input[type="text"]:focus,
-input[type="date"]:hover,
-input[type="date"]:focus,
-select:hover,
-select:focus,
-textarea:hover,
+input:focus,
 textarea:focus {
-    background-color: #000;
-    color: #fff;
-    outline: none;
+	background-color: #ffffff;
+	color: #000000;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #999999;
+  font-style: italic;
+}
+
+#consenso {
+	width: auto;
 }
 
 button {
-    padding: 7px 18px;
+	color: #ffffff;
+	background-color: hsl(220, 60%, 30%);
+	font-weight: bold;
+	padding: 12px 24px;
     border: none;
-    border-radius: 2px;
-    background-color: hsl(220, 60%, 30%);
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 12px;
-    font-weight: bold;
-    cursor: pointer;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 button:hover {
-    background-color: hsl(220, 60%, 45%);
+	color: hsl(45, 90%, 80%);
+	background-color: hsl(220, 60%, 45%);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
 
-footer {
-    margin-top: 30px;
-    padding: 10px 15px;
-
-    text-align: center;
-
-    background-color: #172136;
-    color: white;
-
-    font-size: 12px;
+#site-footer {
+	background-color: hsl(220, 40%, 15%);
+	color: #ffffff;
+	text-align: center;
+	font-size: 1rem;
+	line-height: 4;
 }
 
-footer p {
-    margin: 0;
+#checkbox{
+    width: auto;
 }
