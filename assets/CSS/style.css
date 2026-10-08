@@ -16,11 +16,11 @@ body {
 	background-image: url("../IMG/Gemini-foto.jpg");
 	background-size: cover;
 	background-position: center;
-	color: #F44A4A;
+	color: #000000;
 	text-align: center;
 	line-height: 2.4;
     padding: 60px 20px 40px;
-    border-bottom: 4px solid #c59b27;
+    border-bottom: 4px solid #f6b708;
 }
 
 #site-header h1 {
@@ -35,7 +35,7 @@ body {
   display: flex;
   justify-content: center; 
   align-items: center;     
-  gap: 20px
+  gap: 20px;
   width: 100%;
 }
 
@@ -56,7 +56,7 @@ ul {
 }
 
 #site-header nav a {
-	color: hsl(67, 98%, 26%);
+	color: #f6b708;
 	font-weight: bold;
 	line-height: 3;
     display: inline-block;
@@ -76,14 +76,14 @@ main section {
   background-color: #ffffff;
   padding: 32px;
   margin-bottom: 24px;
-  border: 1px solid #e0e0e0;
+  border: 1px solid #8b8888;
   border-radius: 8px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
 }
 
 main section h2::before {
   content: "— ";
-  color: #c59b27;
+  color: #f6b708;
 }
 
 nav a:hover {
@@ -120,7 +120,7 @@ h3 {
   width: 110px;                     
   height: 110px;                   
   border-radius: 50%;               
-  border: 4px solid #c59b27;        
+  border: 4px solid #f6b708;        
   float: left;                      
   margin: 0 24px 12px 0;           
   object-fit: cover;                
@@ -147,6 +147,7 @@ h3 {
   line-height: 1;
   color: hsl(220, 60%, 30%);
 }
+
 .project:first-of-type h3::after {
   content: "NEW";
   display: inline-block;
@@ -180,11 +181,7 @@ section a:hover {
 }
 
 .project:nth-of-type(odd) {
-	background-color: hsl(45, 60%, 96%);
-}
-
-.project:nth-of-type(even) {
-	background-color: #ffffff;
+	background-color: hsl(44, 69%, 86%);
 }
 
 label {
@@ -227,7 +224,6 @@ button {
 }
 
 button:hover {
-	color: hsl(45, 90%, 80%);
 	background-color: hsl(220, 60%, 45%);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
